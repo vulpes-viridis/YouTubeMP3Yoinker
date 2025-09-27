@@ -1,0 +1,11 @@
+[project]
+name = "youtubemp3yoinker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytubefix>=9.5.1",
+]
+[tool.ruff]
+line-length = 99
