@@ -10,4 +10,5 @@ wheels/
 .venv
 
 # Downloads
-audio/
+m4a/
+mp3/
