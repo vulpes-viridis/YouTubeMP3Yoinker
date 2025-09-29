@@ -4,10 +4,10 @@ import os
 import shutil
 
 
-def read_urls(filepath="urls.txt") -> list[str | None]:
+def read_urls() -> list[str | None]:
     urls = []
     try:
-        with open(filepath, "r") as f:
+        with open("urls.txt", "r") as f:
             for line in f:
                 urls.append(line)
     except FileNotFoundError:
@@ -58,6 +58,8 @@ def do_the_thing(urls: list) -> None:
 def main() -> None:
     do_the_thing(read_urls())
     shutil.rmtree("m4a")
+    with open("urls.txt", "w") as f:
+        f.write("")
     os.startfile("mp3")
 
 
